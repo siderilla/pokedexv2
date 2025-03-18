@@ -17,3 +17,21 @@ tutto ciò che è in public (folder) viene infilato nella root del progetto
 
 npm run build - buildare (cartella dist con i file che erano in public), dove il css diventa più compresso possibile monolinea, idem il js tranne le stringhe interpolate (chenon si possono comprimere)
 pages -> main -> docs
+
+
+///////////// FARE LA POKEDEX AIUTO
+
+step 1 - https://pokeapi.co/api/v2/pokemon/{id or name}/ -- detail call api con id
+fetch url + id
+detail.html
+detail.js
+
+step 2 - https://pokeapi.co/api/v2/type/
+filter buttons per tipo di pokemon (tuono, buio, fairy, etc..)
+fetch url type (for pokemon of type)
+type.html
+type.js
+(navbar su index - queryParams /type.html/?name=type)
+(link a detail anche su type)
+
+<!-- npm pacchetto ghpages copia incolla automatico dist docs -->
