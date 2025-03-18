@@ -1,0 +1,14 @@
+bundling:
+vite prebundles your project dependencies before loading your site locally. It is done automatically and transparently by default.
+
+comando per installare vite bundling tool:
+nmp create vite@latest ./ (così mette le nuove cartelle in quella inc ui siamo già)
+npm run dev - lancio lo script dev presente su package.json
+npm i - installa tutti i moduli che servono
+con vite non servirà più liveserver, ci pensa lui a mettere la roba su browser
+inizializza con npx vite,
+dove? http://localhost:5173
+
+tutto ciò che è in public (folder) viene infilato nella root del progetto
+
+.querySelector è come .getElementById
