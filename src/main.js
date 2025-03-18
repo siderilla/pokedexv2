@@ -1,17 +1,43 @@
-// const divs = document.getElementsByClassName('standard-div'); // più elementi con lo stesso nome
-// console.log(divs);
+import PokeService from "./services/poke-service.js";
 
-// const divs2 = document.getElementsByTagName('div'); // prende TUTTI I TAG nel doc html
-// console.log(divs2);
+const pService = new PokeService();
+pService.getPokemonData().then(data => render(data));
 
-// const counterB = document.getElementById('counter') // id univoco un solo elemento
-// console.log(counterB);
 
-// const counterB2 = document.querySelector('#counter'); // sintassi equivalente a getElementById solo che è più diretta spiccia
-// console.log(counterB2);
+function next() {
+  pService.nextPage();
+  pService.getPokemonData().then(data => render(data));
+}
+window.next = next;
 
-// const el = document.querySelector('.standard-div'); // prende IL PRIMO che trova come classe
-// console.log(el);
+function previous() {
+  pService.previousPage();
+  pService.getPokemonData().then(data => render(data));
+}
 
-// const els = document.querySelectorAll('.standard-div'); // li prende TUTTI
-// console.log(els);
+window.previous = previous;
+
+
+function render(data) {
+  const mainContainer = document.querySelector('#main-container');
+  mainContainer.innerHTML = '';
+
+for (const pokemon of data) {
+  const pokeLink = document.createElement('a');
+  const img = document.createElement('img');
+  img.src = pokemon.sprites.front_default;
+
+  pokeLink.appendChild(img);
+
+  const node = document.createTextNode(pokemon.name);
+  pokeLink.appendChild(node);
+
+  mainContainer.appendChild(pokeLink);
+}
+
+  
+
+// console.log(data);
+
+}
+
