@@ -1,24 +1,17 @@
-import './style.css'
-import javascriptLogo from './javascript.svg'
-import viteLogo from '/vite.svg'
-import { setupCounter } from './counter.js'
+// const divs = document.getElementsByClassName('standard-div'); // più elementi con lo stesso nome
+// console.log(divs);
 
-document.querySelector('#app').innerHTML = `
-  <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="${viteLogo}" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-      <img src="${javascriptLogo}" class="logo vanilla" alt="JavaScript logo" />
-    </a>
-    <h1>Hello Vite!</h1>
-    <div class="card">
-      <button id="counter" type="button"></button>
-    </div>
-    <p class="read-the-docs">
-      Click on the Vite logo to learn more
-    </p>
-  </div>
-`
+// const divs2 = document.getElementsByTagName('div'); // prende TUTTI I TAG nel doc html
+// console.log(divs2);
 
-setupCounter(document.querySelector('#counter'))
+// const counterB = document.getElementById('counter') // id univoco un solo elemento
+// console.log(counterB);
+
+// const counterB2 = document.querySelector('#counter'); // sintassi equivalente a getElementById solo che è più diretta spiccia
+// console.log(counterB2);
+
+// const el = document.querySelector('.standard-div'); // prende IL PRIMO che trova come classe
+// console.log(el);
+
+// const els = document.querySelectorAll('.standard-div'); // li prende TUTTI
+// console.log(els);

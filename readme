@@ -1,3 +1,5 @@
+- https://vite.dev/guide/
+
 bundling:
 vite prebundles your project dependencies before loading your site locally. It is done automatically and transparently by default.
 
@@ -14,3 +16,4 @@ tutto ciò che è in public (folder) viene infilato nella root del progetto
 .querySelector è come .getElementById
 
 npm run build - buildare (cartella dist con i file che erano in public), dove il css diventa più compresso possibile monolinea, idem il js tranne le stringhe interpolate (chenon si possono comprimere)
+pages -> main -> docs
