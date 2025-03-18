@@ -1,0 +1,12 @@
+.type-button {
+	margin-right: 10px; /* Add space between buttons */
+	padding: 5px 10px; /* Add padding for better appearance */
+	text-decoration: none; /* Remove underline from links */
+	color: white; /* Text color */
+	background-color: #007bff; /* Background color */
+	border-radius: 5px; /* Rounded corners */
+  }
+  
+  .type-button:hover {
+	background-color: #0056b3; /* Darker background on hover */
+  }

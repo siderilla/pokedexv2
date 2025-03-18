@@ -1,4 +1,4 @@
-import PokeService from "./services/poke-service.js";
+import PokeService, { goBack } from "./services/poke-service.js";
 
 const pService = new PokeService();
 
@@ -19,6 +19,8 @@ pService.getPokemonById(pokemonId).then(pokemon => {
     console.error('Pokemon not found');
   }
 }).catch(err => console.error(err));
+
+window.goBack = goBack;
 
 // getPokemonId() {
 // 	fetch(POKEMON_URL)
