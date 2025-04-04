@@ -1,58 +1,58 @@
-- https://vite.dev/guide/
+// - https://vite.dev/guide/
 
-bundling:
-vite prebundles your project dependencies before loading your site locally. It is done automatically and transparently by default.
+// bundling:
+// vite prebundles your project dependencies before loading your site locally. It is done automatically and transparently by default.
 
-comando per installare vite bundling tool:
-nmp create vite@latest ./ (così mette le nuove cartelle in quella inc ui siamo già)
-npm run dev - lancio lo script dev presente su package.json
-npm i - installa tutti i moduli che servono
-con vite non servirà più liveserver, ci pensa lui a mettere la roba su browser
-inizializza con npx vite,
-dove? http://localhost:5173
+// comando per installare vite bundling tool:
+// npm create vite@latest ./ (così mette le nuove cartelle in quella inc ui siamo già)
+// npm run dev - lancio lo script dev presente su package.json
+// npm i - installa tutti i moduli che servono
+// con vite non servirà più liveserver, ci pensa lui a mettere la roba su browser
+// inizializza con npx vite,
+// dove? http://localhost:5173
 
-tutto ciò che è in public (folder) viene infilato nella root del progetto
+// tutto ciò che è in public (folder) viene infilato nella root del progetto
 
-.querySelector è come .getElementById
+// .querySelector è come .getElementById
 
-npm run build - buildare (cartella dist con i file che erano in public), dove il css diventa più compresso possibile monolinea, idem il js tranne le stringhe interpolate (chenon si possono comprimere)
-pages -> main -> docs
-
-
-///////////// FARE LA POKEDEX AIUTO
-
-step 1 - https://pokeapi.co/api/v2/pokemon/{id or name}/ -- detail call api con id
-fetch url + id
-detail.html
-detail.js
-
-step 2 - https://pokeapi.co/api/v2/type/
-filter buttons per tipo di pokemon (tuono, buio, fairy, etc..)
-fetch url type (for pokemon of type)
-type.html
-type.js
-(navbar su index - queryParams /type.html/?name=type)
-(link a detail anche su type)
-
-<!-- npm pacchetto ghpages copia incolla automatico dist docs -->
+// npm run build - buildare (cartella dist con i file che erano in public), dove il css diventa più compresso possibile monolinea, idem il js tranne le stringhe interpolate (chenon si possono comprimere)
+// pages -> main -> docs
 
 
-///////////// con VITE:
+// ///////////// FARE LA POKEDEX AIUTO
 
-// const divs = document.getElementsByClassName('standard-div'); // più elementi con lo stesso nome
-// console.log(divs);
+// step 1 - https://pokeapi.co/api/v2/pokemon/{id or name}/ -- detail call api con id
+// fetch url + id
+// detail.html
+// detail.js
 
-// const divs2 = document.getElementsByTagName('div'); // prende TUTTI I TAG nel doc html
-// console.log(divs2);
+// step 2 - https://pokeapi.co/api/v2/type/
+// filter buttons per tipo di pokemon (tuono, buio, fairy, etc..)
+// fetch url type (for pokemon of type)
+// type.html
+// type.js
+// (navbar su index - queryParams /type.html/?name=type)
+// (link a detail anche su type)
 
-// const counterB = document.getElementById('counter') // id univoco un solo elemento
-// console.log(counterB);
+// <!-- npm pacchetto ghpages copia incolla automatico dist docs -->
 
-// const counterB2 = document.querySelector('#counter'); // sintassi equivalente a getElementById solo che è più diretta spiccia
-// console.log(counterB2);
 
-// const el = document.querySelector('.standard-div'); // prende IL PRIMO che trova come classe
-// console.log(el);
+// ///////////// con VITE:
 
-// const els = document.querySelectorAll('.standard-div'); // li prende TUTTI
-// console.log(els);
+// // const divs = document.getElementsByClassName('standard-div'); // più elementi con lo stesso nome
+// // console.log(divs);
+
+// // const divs2 = document.getElementsByTagName('div'); // prende TUTTI I TAG nel doc html
+// // console.log(divs2);
+
+// // const counterB = document.getElementById('counter') // id univoco un solo elemento
+// // console.log(counterB);
+
+// // const counterB2 = document.querySelector('#counter'); // sintassi equivalente a getElementById solo che è più diretta spiccia
+// // console.log(counterB2);
+
+// // const el = document.querySelector('.standard-div'); // prende IL PRIMO che trova come classe
+// // console.log(el);
+
+// // const els = document.querySelectorAll('.standard-div'); // li prende TUTTI
+// // console.log(els);
